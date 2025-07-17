@@ -2,43 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Tip calculator app</title>
 </head>
 <body>
 
-  Bill
+  <div class="input-container">
+    <label for="bill">Bill</label>
+    <input type="number" name="bill" id="bill">
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
 
-  Number of People
+    <fieldset>
+      <legend>Select Tip %</legend>
+      <div class="tip-percentage-container">
+        <input type="radio" name="tip-percentage" id="five-percent" value=".5">
+        <label for="five-percent">5%</label>
 
-  Tip Amount
-  / person
+        <input type="radio" name="tip-percentage" id="five-percent" value=".05">
+        <label for="five-percent">5%</label>
 
-  Total
-  / person
+        <input type="radio" name="tip-percentage" id="ten-percent" value=".1">
+        <label for="ten-percent">10%</label>
 
-  Reset
+        <input type="radio" name="tip-percentage" id="fifteen-percent" value=".15">
+        <label for="fifteen-percent">15%</label>
+
+        <input type="radio" name="tip-percentage" id="twenty-percent" value=".2">
+        <label for="twenty-percent">20%</label>
+
+        <input type="radio" name="tip-percentage" id="fifty-percent" value=".5">
+        <label for="fifty-percent">50%</label>
+      </div>
+    </fieldset>
+
+    <label for="people">Number of People</label>
+    <input type="number" name="people" id="people">
+  </div>
+
+  <div class="result-container">
+    <div class="tip-amount-container">
+      <div class="result-titles">
+        <p>Tip Amount</p>
+        <p>/ person</p>
+      </div>
+      <p id="tip-amount"></p>
+    </div>
+    <div class="total-container">
+      <div class="result-titles">
+        <p>Total</p>
+        <p>/ person</p>
+      </div>
+      <p id="total-amount"></p>
+    </div>
+    <button id="reset-btn">Reset</button>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Isaac Odrosky</a>.
   </div>
 </body>
 </html>
