@@ -1,0 +1,18 @@
+:root {
+    --accent-green: hsl(172, 67%, 45%);
+    --dark-green: hsl(183, 100%, 15%);
+    --dark-grey: hsl(186, 14%, 30%);
+    --med-grey: hsl(184, 14%, 56%);
+    --lt-grey: hsl(185, 41%, 84%);
+}
+
+body {
+    background-color: var(--lt-grey);
+    color: var(--dark-grey);
+    font-family: "Space Mono", monospace;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+}
