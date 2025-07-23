@@ -21,10 +21,6 @@
           <legend>Select Tip %</legend>
           <div class="tip-percentage-container">
             <div class="radio-container">
-              <input type="radio" name="percentage" id="five-percent" value=".5">
-              <label for="five-percent">5%</label>
-            </div>
-            <div class="radio-container">
               <input type="radio" name="percentage" id="five-percent" value=".05">
               <label for="five-percent">5%</label>
             </div>
@@ -55,6 +51,7 @@
           <div class="result-titles">
             <p>Tip Amount</p>
             <p>/ person</p>
+            <p id="tipPerPersonDisplay"></p>
           </div>
           <p id="tip-amount"></p>
         </div>
@@ -62,10 +59,11 @@
           <div class="result-titles">
             <p>Total</p>
             <p>/ person</p>
+            <p id="totalPerPersonDisplay"></p>
           </div>
           <p id="total-amount"></p>
         </div>
-        <button id="reset-btn">RESET</button>
+        <button id="reset-btn">Reset</button>
       </div>
     </main>
   
