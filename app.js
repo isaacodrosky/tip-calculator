@@ -19,11 +19,13 @@ calcBtn.addEventListener('click', (e) => {
     //convert bill, percentage, people value to numbers
     const bill = parseFloat(billTotal.value)
     const percent = parseFloat(tipPercent.value)
-    const people = parseInt(numberPeople.value)
+    const people = parseFloat(numberPeople.value)
 
     //calculate per person tip and total
-    const tipPerPerson = (bill * percent) / people
-    const totalPerPerson = ((bill / people) + tipPerPerson)
+    const tipPerPerson = parseFloat(
+        ((bill * percent) / people).toFixed(2))
+    const totalPerPerson = parseFloat(
+        ((bill / people) + tipPerPerson).toFixed(2))
 
     // update dom to display these values
     tipPerPersonDisplay.innerText = `${tipPerPerson}`
