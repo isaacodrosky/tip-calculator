@@ -67,10 +67,18 @@ button {
     color: var(--dark-green);
 }
 
+.tip-percentage-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
 .radio-container {
-    display: inline-block;
     background-color: var(--dark-green);
     color: var(--lt-grey);
+    padding: 8px;
+    margin: 3px;
+    border-radius: 3px;
+    text-align: center;
 }
 
 input[type="radio"] {

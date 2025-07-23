@@ -2,9 +2,10 @@
 // DONE V1 collect user input (vers 1: by 'calculate' click
 // vers 2: on final input)
 // error message if inputs left empty
+// allow for custom tip percentage
 // DONE calculate tip amounts/total
 // DONE display calculations
-// reset function - all inputs back to 'empty'
+// DONE reset function - all inputs back to 'empty'
 
 const billTotal = document.getElementById('bill')
 const tipPercent = document.querySelector('input[type="radio"]:checked')
